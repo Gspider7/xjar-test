@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: jpa-test
+
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/dataquality?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 123456
+
+
+  # jpa≈‰÷√
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+server:
+  port: 8080
